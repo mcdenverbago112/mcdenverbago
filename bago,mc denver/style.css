@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.infographic {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.infographic-item {
+    width: 30%;
+    background-color:white;
+    border: 1px solid blue;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px green (0,0,0,0.1);
+    text-align: center;
+}
+
+.infographic-item h2 {
+    color: red;
+}
+
+.infographic-item p {
+    color: red;
+}
+
+
+
+
