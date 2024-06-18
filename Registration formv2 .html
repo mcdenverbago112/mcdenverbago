@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<script>
+    function validateForm() {
+        var username = document.getElementById("username").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        // Basic validation for username and password
+        if (username === "") {
+            alert("Please enter a username.");
+            return false;
+        }
+         // Email validation
+        if (!validateEmail(email)) {
+            alert("Please enter a valid email address.");
+            return false;
+        }
+        if (password === "") {
+         alert("Please enter a password.");
+          return false;
+     }
+
+        // If all validations pass, allow form submission
+        return true;
+    }
+
+    function validateEmail(email) {
+        // Regular expression for basic email validation
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
+    }
+</script>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form id="registrationForm" onsubmit="return validateForm()" action="login.html">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br><br>
+       
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+       
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        
+        
+        
+        
+        <button type="submit">Submit Me</button>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
