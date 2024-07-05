@@ -5,13 +5,13 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('https://wallpapers-clan.com/wp-content/uploads/2024/03/pokemon-bulbasaur-landscape-desktop-wallpaper-cover.jpg');
+  
     background-size: cover;
     background-position: center;
   }
   
   .container {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color:   (255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -28,7 +28,7 @@ body {
   
   label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   
   input[type="email"],
@@ -42,7 +42,7 @@ body {
   button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color:  black;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -50,7 +50,7 @@ body {
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: black;
   }
   
   #error-msg {
